@@ -1,0 +1,74 @@
+[
+  {
+    "id": "repo_qa_001",
+    "task_type": "REPO_QA",
+    "repository": "Shubhamsaboo/awesome-llm-apps",
+    "input": "Explain the architecture of this repository and locate auth files.",
+    "expected_files": ["chat_github.py", "chat_github_llama3.py"],
+    "expected_concepts": ["streamlit", "embedchain", "github"],
+    "expected_workflow": "REPO_INTELLIGENCE"
+  },
+  {
+    "id": "code_search_001",
+    "task_type": "CODE_SEARCH",
+    "repository": "Shubhamsaboo/awesome-llm-apps",
+    "input": "Where is GITHUB_TOKEN environment variable loaded?",
+    "expected_files": ["chat_github_llama3.py"],
+    "expected_concepts": ["GITHUB_TOKEN", "os.getenv"],
+    "expected_workflow": "REPO_INTELLIGENCE"
+  },
+  {
+    "id": "issue_analysis_001",
+    "task_type": "ISSUE_ANALYSIS",
+    "repository": "Shubhamsaboo/awesome-llm-apps",
+    "input": "Analyze issue #42: Unhandled exception when loading repo token",
+    "expected_files": ["chat_github_llama3.py"],
+    "expected_concepts": ["Your GitHub Token", "KeyError"],
+    "expected_workflow": "ISSUE_ANALYSIS"
+  },
+  {
+    "id": "change_impact_001",
+    "task_type": "CHANGE_IMPACT",
+    "repository": "Shubhamsaboo/awesome-llm-apps",
+    "input": "What files will be affected if I change chat_github_llama3.py?",
+    "expected_files": ["chat_github_llama3.py"],
+    "expected_concepts": ["dependencies", "affected"],
+    "expected_workflow": "CHANGE_IMPACT"
+  },
+  {
+    "id": "pr_review_001",
+    "task_type": "PR_REVIEW",
+    "repository": "Shubhamsaboo/awesome-llm-apps",
+    "input": "Review PR #25 for hardcoded credentials and logic bugs",
+    "expected_files": ["chat_github.py"],
+    "expected_concepts": ["hardcoded", "credentials"],
+    "expected_workflow": "PR_REVIEW"
+  },
+  {
+    "id": "test_gen_001",
+    "task_type": "TEST_GENERATION",
+    "repository": "Shubhamsaboo/awesome-llm-apps",
+    "input": "Generate tests for chat_github.py covering happy path and edge cases",
+    "expected_files": ["test_chat_github.py"],
+    "expected_concepts": ["pytest", "assert"],
+    "expected_workflow": "TEST_GENERATION"
+  },
+  {
+    "id": "security_001",
+    "task_type": "SECURITY_AUDIT",
+    "repository": "Shubhamsaboo/awesome-llm-apps",
+    "input": "Audit repository for security vulnerabilities and hardcoded secrets",
+    "expected_files": ["chat_github_llama3.py"],
+    "expected_concepts": ["Your GitHub Token", "mitigation"],
+    "expected_workflow": "SECURITY_AUDIT"
+  },
+  {
+    "id": "routing_001",
+    "task_type": "ROUTING",
+    "repository": "Shubhamsaboo/awesome-llm-apps",
+    "input": "Fix issue #42, generate unit tests and prepare a PR",
+    "expected_files": ["chat_github_llama3.py"],
+    "expected_concepts": ["FULL_ENGINEERING_WORKFLOW"],
+    "expected_workflow": "FULL_ENGINEERING_WORKFLOW"
+  }
+]
