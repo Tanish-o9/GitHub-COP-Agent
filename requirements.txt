@@ -1,0 +1,8 @@
+streamlit>=1.30.0
+embedchain[github]>=0.1.100
+openai>=1.0.0
+PyGithub>=2.0.0
+pydantic>=2.0.0
+requests>=2.28.0
+httpx>=0.24.0
+pyyaml>=6.0
